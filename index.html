@@ -3,73 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamar AI | Enterprise Vernacular Intelligence</title>
+    <title>हमर AI - Premium AI Solutions</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="cursor"></div>
-    <div class="mesh-gradient"></div>
-
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">हमर <span>AI</span></div>
-        <div class="nav-links">
-            <a href="#vision">Vision</a>
-            <a href="#tech">Technology</a>
-            <button class="btn-primary">Get Enterprise Access</button>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="hamar">हमर</span><span class="ai">AI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <header class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
         <div class="hero-content">
-            <div class="badge">Propelling Bharat into the AI Era</div>
-            <h1>Building the World's Most <span class="gradient-text">Human AI.</span></h1>
-            <p>High-precision vernacular language models designed for the next billion users. Secure, localized, and incredibly fast.</p>
-            <div class="hero-btns">
-                <button class="btn-glow">Explore Ecosystem</button>
-                <button class="btn-link">View Documentation →</button>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hamar-hero">हमर</span><span class="ai-hero">AI</span>
+                </h1>
+                <p class="hero-subtitle">Transforming Businesses with Next-Generation Artificial Intelligence</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('features')">
+                        <span>Explore Solutions</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('contact')">
+                        Get Started Free
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="hero-visual" id="tiltContainer">
-            <img src="girl.jpg" alt="AI Core" class="main-visual">
-        </div>
-    </header>
-
-    <section class="founder-bar" id="vision">
-        <div class="founder-card">
-            <div class="founder-text">
-                <h2>Prince Kaushik</h2>
-                <h3>Founder & Senior Engineer</h3>
-                <p>"हमर AI is not just software; it's a bridge between technology and our roots. We are redefining how a billion people interact with the future."</p>
-            </div>
-            <div class="founder-meta">
-                <div class="stat"><span>500M+</span>Tokens</div>
-                <div class="stat"><span>99.9%</span>Accuracy</div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Projects Done</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">% Satisfaction</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bento-container" id="tech">
-        <div class="bento-item tall st-1">
-            <h4>Native Dialects</h4>
-            <p>Processing 22+ Indian languages with contextual nuance.</p>
-        </div>
-        <div class="bento-item wide st-2">
-            <h4>Security First Architecture</h4>
-            <p>Military-grade encryption for enterprise-level data privacy.</p>
-        </div>
-        <div class="bento-item st-3">
-            <h4>Ultra Low Latency</h4>
-            <p>Edge nodes across the continent for instant response.</p>
-        </div>
-        <div class="bento-item st-4">
-            <h4>Custom Training</h4>
-            <p>Fine-tuned models for specific business domains.</p>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Premium AI Features</h2>
+                <p class="section-subtitle">Discover the power of हमार AI's cutting-edge technology</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neural Intelligence</h3>
+                    <p>Advanced neural networks that learn and adapt in real-time for superior performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>Military-grade encryption and compliance with global data protection standards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Speed</h3>
+                    <p>Process millions of data points in milliseconds with optimized GPU acceleration.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Smart Analytics</h3>
+                    <p>Real-time insights and predictive analytics that drive business growth.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AI Solutions for Every Industry</h2>
+                <p class="section-subtitle">Tailored artificial intelligence solutions for your business needs</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-image healthcare"></div>
+                    <div class="solution-content">
+                        <h3>Healthcare</h3>
+                        <p>AI-powered diagnostics and patient care optimization</p>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-image finance"></div>
+                    <div class="solution-content">
+                        <h3>Finance</h3>
+                        <p>Fraud detection and algorithmic trading solutions</p>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-image retail"></div>
+                    <div class="solution-content">
+                        <h3>Retail</h3>
+                        <p>Personalized recommendations and inventory management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Join thousands of businesses powered by हमार AI</p>
+                <button class="btn-primary large" onclick="scrollToSection('contact')">
+                    Start Your Free Trial
+                    <i class="fas fa-rocket"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss how हमार AI can power your business</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@hamarai.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <p>© 2026 Hamar AI Technologies. Engineered by Prince Kaushik.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="hamar">हमार</span><span class="ai">AI</span>
+                    </div>
+                    <p>Premium AI solutions for the modern enterprise.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 हमार AI. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
